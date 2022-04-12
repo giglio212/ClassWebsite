@@ -1,0 +1,89 @@
+/*menu*/
+
+ul#menu {
+    position:absolute;			/* 'relative' sostituito con 'absolute' per centrare il logo */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri;
+}
+
+ul#menu li {
+margin:0;
+padding:0;
+float:left;
+display: block;
+position: relative;
+width: 150px;
+height:50px;
+}
+
+ul#menu li a {
+float: left;
+padding:10px 30px;
+color: #fff;
+text-transform: uppercase;
+text-decoration:none;
+}
+
+ul#menu li a:hover {
+background: #888;
+color:#fff;
+}
+
+ul#menu ul {
+margin:2px 0 0;
+padding:0;
+display:inline-block;
+list-style: none;
+opacity: 0;
+visibility: hidden;
+position: absolute;
+top: 48px;
+left: 0;
+z-index:9999;
+background: #444;
+line-height: 32px; /* verticale */
+}
+
+ul#menu li:hover > ul {
+opacity: 1;
+visibility: visible;
+}
+
+ul#menu ul li {
+float: none;
+display: block;
+border: 0;
+}
+
+ul#menu ul a {
+padding:10px;
+width: 130px;
+height:30px;
+display: block;
+white-space: nowrap;
+float: none;
+text-transform: none;
+}
+
+ul#menu ul a:hover {
+background-color: #0186ba;
+color:#fff
+}
+
+ul#menu ul ul {
+top: 0;
+left: 150px;
+margin: 0;
+}
+
+
+
+
+
+header {width:100%;height:50px;background-color:rgba(210, 213, 216, 0.9);position:fixed;min-width:560px;} 	
+img.fotografia {display: block; margin:0 auto;width:300px;cursor:default;padding-top:4px;}
+body {margin-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;}
+
+img.Sfondo1 {display: block; margin:0 auto;width:100%;height:auto;}
